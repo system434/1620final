@@ -1,6 +1,29 @@
-h1{
-    font-family: 'Indie Flower', cursive;
-}
 body{
     font-family: 'RocknRoll One', sans-serif;
+    font-size: larger;
+    background-color: #98c1d9;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large;
+    background-color: #3d5a80;
+}
+
+
+nav{
+    align-items: center;
+}
+
+.cart{
+    background-color:#f5cac3 ;
+}
+
+
+
+footer{
+    background-color: #3D5A80;
+}
+
+@media screen and (min-width:640px) {
+    
 }
