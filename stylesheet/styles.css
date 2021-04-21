@@ -1,29 +1,50 @@
+
+.Albums {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 body{
     font-family: 'RocknRoll One', sans-serif;
-    font-size: larger;
+    font-size: xx-large;
     background-color: #98c1d9;
+}
+header{
+    text-align: center;
 }
 h1{
     font-family: 'Indie Flower', cursive;
-    font-size: xx-large;
+    font-size: larger;
     background-color: #3d5a80;
+    color: white;
 }
 
 
-nav{
-    align-items: center;
+nav ul{
+    text-align: center;
+    list-style: none;
+    
 }
 
 .cart{
+    text-align: center;
     background-color:#f5cac3 ;
 }
 
-
-
 footer{
+    text-align: center;
     background-color: #3D5A80;
+    color: white;
 }
 
-@media screen and (min-width:640px) {
-    
+@media screen and (max-width:640px) {
+    .Albums {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
 }
