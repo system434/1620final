@@ -19,11 +19,43 @@ addimgsrc(imagearray);
 
 
 const alb = document.querySelector(".Albums");
+const cart = document.querySelector(".cart");
 
 
 function addtocart(event){
     //use event.target
-    console.log(event.target);
+    //console.log(event.target);
+    for(album of albums){
+        if(album.name = event.target.id){
+            if(album.addedToCart == true){
+                alert("This item is already in your cart.")
+                break;
+            }
+            console.log(albums[counter].price);
+            console.log(album.name);
+            let a = album.name;
+            console.log(albums[a]);
+            console.log(album.addedToCart);
+            //album.addedToCart = true;
+            console.log(albums);
+            break;
+        }
+        
+
+    }
+
+    // let img = document.createElement("img");
+    // img.src = event.target.src;
+    // img.alt = event.target.alt;
+    // cart.appendChild(img);
+
+    // let nam = document.createElement("p");
+    // nam.textContent = event.target.alt;
+    // cart.appendChild(nam);
+
+    // let price = document.createElement("p");
+    // for(let tem of albums)
+    
 }
 
 
