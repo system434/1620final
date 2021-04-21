@@ -25,36 +25,35 @@ const cart = document.querySelector(".cart");
 function addtocart(event){
     //use event.target
     //console.log(event.target);
-    for(album of albums){
+    for(let album of albums){
         if(album.name = event.target.id){
             if(album.addedToCart == true){
                 alert("This item is already in your cart.")
                 break;
             }
-            console.log(albums[counter].price);
-            console.log(album.name);
-            let a = album.name;
-            console.log(albums[a]);
-            console.log(album.addedToCart);
-            //album.addedToCart = true;
-            console.log(albums);
+            else{
+                album.addedToCart = true;
+
+                let img = document.createElement("img");
+                img.src = event.target.src;
+                img.alt = event.target.alt;
+                cart.appendChild(img);
+
+                let nam = document.createElement("p");
+                nam.textContent = event.target.alt;
+                cart.appendChild(nam);
+
+                let price = document.createElement("p");
+                price.textContent = albums[`${event.target.alt}`].price;
+                cart.appendChild(price);
+            }
             break;
         }
         
 
     }
 
-    // let img = document.createElement("img");
-    // img.src = event.target.src;
-    // img.alt = event.target.alt;
-    // cart.appendChild(img);
-
-    // let nam = document.createElement("p");
-    // nam.textContent = event.target.alt;
-    // cart.appendChild(nam);
-
-    // let price = document.createElement("p");
-    // for(let tem of albums)
+    
     
 }
 
